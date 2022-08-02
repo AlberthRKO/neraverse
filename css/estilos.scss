@@ -1,0 +1,1827 @@
+/* .row > * {
+  //border: 1px solid rgb(231, 24, 24);
+}
+ */
+@font-face {
+  font-family: "builti";
+  src: url('../font/builti.ttf') format('truetype');
+}
+//---------------------------------------
+//1. PATRONES DE COLORES
+//---------------------------------------
+$principal: #e99800;
+$secundario: #2c4964;
+$oscuro: #999;
+$texto: #fff;
+$colorBg: #09002a;
+$colorCard: #330662;
+
+//---------------------------------------
+// 2. TIPOGRAFIA DEL SITIO
+//---------------------------------------
+
+html {
+  font-size: 14px;
+}
+
+body {
+  color: $texto;
+  font-family: "Exo", sans-serif;
+}
+.display-1,
+.display-3,
+.display-4,
+.display-5,
+.display-6{
+  font-family: 'builti', cursive;
+}
+h1,h2,h3{
+  color: white !important;
+}
+.text-warning{
+  color: $principal !important;
+}
+nav{
+  font-family: 'Oxanium', cursive;
+}
+section{
+  z-index: 15;
+}
+
+#particle-js{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: transparent;
+}
+#portadaaa{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 2;
+}
+
+
+//---------------------------------------
+// 3. ESTILOS GENERALES PARA LOS BOTONES
+//---------------------------------------
+.btn {
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+}
+
+//---------------------------------------
+// 4. ESTILOS COLOR PRIMARY
+//---------------------------------------
+.titulo2 {
+  font-family: "Aldrich", sans-serif;
+  color: #000;
+  color: $principal;
+}
+
+.bg-primary {
+  background-color: $principal !important;
+}
+
+.text-primary {
+  color: $principal !important;
+}
+
+.btn-primary {
+  background-color: $principal;
+  border-color: $principal;
+}
+
+.btn-primary:hover {
+  background-color: lighten($principal, 5%);
+  border-color: $principal;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba($principal, 0.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: lighten($principal, 5%);
+  border-color: lighten($principal, 20%);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba($principal, 0.5);
+}
+
+//---------------------------------------
+// 5. ESTILOS COLOR SECONDARY
+//---------------------------------------
+
+.bg-secondary {
+  background-color: $secundario !important;
+}
+
+.text-secondary {
+  color: $secundario !important;
+}
+
+.btn-secondary {
+  background-color: $secundario;
+  border-color: $secundario;
+}
+
+.btn-secondary:hover {
+  background-color: lighten($secundario, 5%);
+  border-color: $secundario;
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+  box-shadow: 0 0 0 0.2rem rgba($secundario, 0.5);
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: lighten($secundario, 5%);
+  border-color: lighten($secundario, 20%);
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba($secundario, 0.5);
+}
+
+//---------------------------------------
+// 6. ESTILOS COLOR DARK
+//---------------------------------------
+
+.bg-dark {
+  background-color: $oscuro !important;
+}
+
+.text-dark {
+  color: $oscuro !important;
+}
+
+.btn-dark {
+  background-color: $oscuro;
+  border-color: $oscuro;
+}
+
+.btn-dark:hover {
+  background-color: lighten($oscuro, 5%);
+  border-color: $oscuro;
+}
+
+.btn-dark:focus,
+.btn-dark.focus {
+  box-shadow: 0 0 0 0.2rem rgba($oscuro, 0.5);
+}
+
+.btn-dark:not(:disabled):not(.disabled):active,
+.btn-dark:not(:disabled):not(.disabled).active,
+.show > .btn-dark.dropdown-toggle {
+  color: #fff;
+  background-color: lighten($oscuro, 5%);
+  border-color: lighten($oscuro, 20%);
+}
+
+.btn-dark:not(:disabled):not(.disabled):active:focus,
+.btn-dark:not(:disabled):not(.disabled).active:focus,
+.show > .btn-dark.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba($oscuro, 0.5);
+}
+
+//---------------------------------------
+// 7. ESTILOS #NAVEGACION
+//---------------------------------------
+#navegacion {
+  background: transparent;
+
+  /* .container {
+    max-width: 100%;
+  } */
+  .navbar-brand {
+    margin-right: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      width: 7rem;
+      height: auto;
+    }
+  }
+}
+//Estilos Mmenu.js
+.mm-navbars_top .mm-navbar {
+  background: white;
+}
+
+//Estilos de los enlaces
+.mm-menu a,
+.mm-menu a:active,
+.mm-menu a:hover,
+.mm-menu a:link,
+.mm-menu a:visited {
+  color: rgb(51, 51, 51);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+//Estilos viñeta menu
+.mm-btn_next:after,
+.mm-btn_prev:before {
+  border: 2px solid rgb(51, 51, 51);
+  border-bottom: none;
+  border-right: none;
+  width: 4px;
+  height: 4px;
+}
+
+//Estilos para Mburger
+.mburger {
+  --mb-bar-width: 0.35; // Anchura de las barras del boton
+  --mb-bar-height: 4px; // Altura de las barras del boton
+  --mb-bar-spacing: 5px; //Separación de las barras del boton
+  color: #fff !important;
+  height: 50px;
+  width: 50px;
+  line-height: 0;
+  padding: 0;
+  &:hover {
+    background: rgba(255, 255, 255, 0.21);
+  }
+  b {
+    margin-left: -6px;
+  }
+}
+/* Estilos para los botones del encabezado */
+.btn-iconos {
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 0 0.5rem;
+  &:hover,
+  &:focus {
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.boton-carrito {
+  .dropdown-menu {
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem 1rem;
+    margin-top: 1rem;
+    &::before {
+      content: "";
+      position: absolute;
+      background: white;
+      width: 1.5rem;
+      height: 1.5rem;
+      right: 1rem;
+      top: -0.5rem;
+      transform: rotate(45deg);
+      border-radius: 0.2rem;
+      box-shadow: -5px -5px 5px rgba(8, 8, 8, 0.18);
+    }
+  }
+}
+/* Ocultamos el icono .fa-times por defecto */
+.btn-buscar {
+  .fa-times {
+    display: none;
+  }
+  &.boton-buscar-activo .fa-search {
+    display: none;
+  }
+
+  &.boton-buscar-activo .fa-times {
+    display: block;
+  }
+}
+
+//---------------------------------------
+// 8. ESTILOS #DETALLES-ENCABEZADO
+//---------------------------------------
+#detalles-encabezado {
+  .nav-link {
+    color: #333;
+    padding: 0 0.7rem;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+    &.active {
+      font-weight: bold;
+    }
+  }
+}
+.encabezadoFijo {
+  // background: $principal !important;
+  background-color: rgba(9,0,42,1) !important;
+  box-shadow: 0px 3px 15px rgba(9,0,42, 0.3) !important;
+  z-index: 9999;
+}
+//---------------------------------------
+// 9. ESTILOS #slideBeneficios
+//---------------------------------------
+
+//Estilos para los botones atras y adelante
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f053";
+  font-weight: 900;
+  color: #c7c7c7;
+  transition: color ease 0.5s;
+}
+.swiper-button-next::after {
+  content: "\f054";
+}
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  color: $principal;
+}
+//Estilos paginacion
+.swiper-pagination-bullet {
+  width: 1.4rem;
+  height: 1.4rem;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: 0.2;
+  transition: opacity ease 0.5s;
+}
+.swiper-pagination-bullet:hover {
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: $principal;
+}
+.swiper-pagination-bullet-active:hover {
+  opacity: 1;
+}
+
+//---------------------------------------
+// 10. ESTILOS .navSlider
+//---------------------------------------
+.navSlider {
+  .swiper-slide {
+    width: auto !important;
+    margin: 0 0.6rem;
+    padding: 0.3rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #807f7f;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all ease 0.3s;
+  }
+  .swiper-slide-thumb-active {
+    color: $principal;
+    border-bottom: 2px solid;
+  }
+}
+
+//---------------------------------------
+// 11. ESTILOS #slideFunciones
+//---------------------------------------
+
+#slideFunciones {
+  background: #dedede;
+}
+
+//---------------------------------------
+// 12. ESTILOS #pie-pagina
+//---------------------------------------
+// #pie-pagina {
+//   background: #525252;
+//   a {
+//     color: #e4e3e3;
+//   }
+//   ul a {
+//     font-size: 0.85rem;
+//     padding: 0.25rem 0;
+//     display: block;
+//   }
+// }
+// //Estilos Redes Sociales
+
+// .redesSocialesCreditos {
+//   background: #313131;
+// }
+// .enlacesSociales {
+//   a {
+//     background: #adadad;
+//     display: inline-flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 4rem;
+//     height: 4rem;
+//     font-size: 2.5rem;
+//     color: #313131 !important;
+//     margin: 0 0.3rem;
+//     border-radius: 0.2rem;
+//     text-decoration: none;
+//     transition: transform ease 0.15s;
+
+//     &:hover {
+//       transform: scale(1.25);
+//     }
+//   }
+// }
+// //Estilos .enlacesSecundarios
+// .enlacesSecundarios {
+//   li {
+//     a {
+//       font-size: 1rem !important;
+//       padding: 0.15rem 1rem !important;
+//     }
+//   }
+// }
+
+// // Agregaciones
+// .btn-buscar2 {
+//   background-color: #e99800 !important;
+// }
+
+.columna-inclinada::before {
+  content: "";
+  position: absolute;
+  background: $principal;
+  left: -100%; //asemos que tome mas espacio q su padre
+  top: 0;
+  right: -100%; //lo mismo
+  bottom: 0;
+}
+
+.enlaces-secundario {
+  // doble borde
+  border-bottom: 0.1px solid $principal;
+  // desplazamiento horizontal y vertical
+  box-shadow: 0 1px #212529;
+}
+
+.enlaces-secundario a {
+  padding: 1rem;
+  color: $secundario;
+  text-decoration: none;
+  display: block;
+}
+
+.derechosAutor {
+  color: $secundario;
+  font-weight: bold;
+}
+
+.bg-footer {
+  background-color: white;
+  border: 1px solid $principal;
+}
+
+//---------------------------------------
+// x. SHOW DE LAS MEDIAS QUERIES
+//---------------------------------------
+@media (min-width: 576px) {
+  .enlacesSecundarios {
+    li {
+      display: flex;
+      align-items: center;
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f111";
+        color: #fff;
+        font-size: 0.4rem;
+      }
+      &:first-child::before {
+        content: "";
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+
+  #navegacion .navbar-brand {
+    margin-right: 1.5rem;
+    padding: 0.7rem 0;
+    position: static;
+    left: auto;
+    transform: translateX(0);
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    padding: 0.9rem;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:hover,
+  .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 0.95);
+    // background: rgba(#e99800, 0.23);
+    box-shadow: 0 -3px 0 white inset;
+    cursor: pointer;
+  }
+  #menu-principal {
+    .dropdown-toggle::after {
+      transform: scale(0.7) translateY(3px);
+    }
+
+    .dropdown-menu {
+      border-radius: 0;
+      box-shadow: 0 3px 10px #0404045e;
+      border: 0;
+      background: #f7f7f7;
+      transform: translateY(-2px);
+    }
+    .dropdown-menu {
+      .fa-windows {
+        transform: scale(0.8) translateY(1px);
+      }
+    }
+  }
+}
+
+.campo-buscar {
+  background: transparent !important;
+}
+
+@media (min-width: 1200px) {
+  #navegacion {
+    
+    .campo-buscar,
+    .boton-buscar {
+      border: 1px solid #eaeaea;
+      // background: white;
+      color: white;
+      font-weight: lighter;
+    }
+    .boton-buscar:hover,
+    .boton-buscar:focus {
+      background: #bdbdbd;
+      color: #fff;
+    }
+    .campo-buscar::placeholder {
+      color: rgba($color: #fff, $alpha: .5);
+    }
+    .boton-buscar {
+      color: white;
+    }
+    .boton-buscar:hover {
+      color: white;
+      border: none;
+      background: $principal;
+    }
+  }
+}
+
+#topbar {
+  background: #fff;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+#topbar.topbar-scrolled {
+  top: -40px;
+}
+
+#topbar .contact-info a {
+  line-height: 1;
+  color: #444444;
+  transition: 0.3s;
+}
+
+#topbar .contact-info a:hover {
+  color: #e99800;
+}
+
+#topbar .contact-info i {
+  color: #e99800;
+  padding-right: 4px;
+  margin-left: 15px;
+}
+
+#topbar .contact-info i:first-child {
+  margin-left: 0;
+}
+
+#topbar .social-links a {
+  color: #e99800;
+  padding-left: 15px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+}
+
+#topbar .social-links a:hover {
+  color: #e99800;
+}
+
+#topbar .social-links a:first-child {
+  border-left: 0;
+}
+
+// .navbar {
+//   box-shadow: 0px 3px 15px rgba(#e99800, 0.2) !important;
+// }
+
+@media (max-width: 768px) {
+  .tituloContenido h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .tituloContenido h2 {
+    font-size: 2rem;
+  }
+  .tituloContenido p {
+    font-size: 0.8rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f1f7fd;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.section-title h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: $secundario;
+}
+.section-title2 h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  position: relative;
+  color: $secundario;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: $principal;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title2 h3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title2 h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: $principal;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  background-color: white;
+  text-align: center;
+  padding: 80px 20px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: all ease-in-out 0.4s;
+}
+
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: $principal;
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+}
+footer .icon-box .icon {
+  margin: 0 auto;
+  width: 32px;
+  height: 32px;
+  background: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: all 0.3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+.services .icon-box .icon i {
+  color: #fff;
+  font-size: 28px;
+}
+footer .icon-box .icon i {
+  color: $principal;
+  font-size: 15px;
+}
+
+.services .icon-box .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: #cdd2b3;
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon-box h4 a {
+  color: $secundario;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  background: $principal;
+  border-color: $principal;
+  box-shadow: 0px 3px 15px rgba($principal, 0.1);
+}
+
+.services .icon-box:hover .icon {
+  background: #fff;
+}
+
+.services .icon-box:hover .icon i {
+  color: $principal;
+}
+footer .icon-box:hover .icon {
+  background: $principal;
+  border: 1px solid white;
+}
+
+footer .icon-box:hover .icon i {
+  color: white;
+}
+
+.services .icon-box:hover .icon::before {
+  background: #cdd2b3;
+}
+
+.services .icon-box:hover h4 a {
+  color: #fff;
+}
+.services .icon-box:hover p {
+  color: #fff;
+  font-weight: 500;
+}
+
+.services .icon-box a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  // se expande mas de la cuenta xeso al before le quitamos su expansion
+  .columna-inclinada::before {
+    left: -300%;
+    right: 0px;
+    transform: skewX(-20deg);
+  }
+}
+
+@media (min-width: 1200px) {
+  // se expande mas de la cuenta xeso al before le quitamos su expansion
+  .columna-inclinada::before {
+    right: -120px;
+  }
+}
+
+// Seccion de Formas de Pago
+.estiloTabla {
+  background-color: white;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Alineamiento de tablas por el boton */
+#tablas tr td,
+#tablas tr th {
+  vertical-align: middle;
+}
+
+th {
+  text-transform: capitalize;
+}
+
+.patrocinadores img {
+  width: 100px;
+}
+
+.btn-iconos:hover,
+.btn-iconos:focus {
+  background: none;
+}
+
+button:focus {
+  outline: none !important;
+}
+.mburger:hover {
+  background: none !important;
+}
+
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  outline: none !important;
+}
+@media (max-width: 500px) {
+  .mm-navbars_top,
+  .mm-panels {
+    width: 80%;
+  }
+}
+
+@media (max-width: 420px) {
+  .mm-navbars_top,
+  .mm-panels {
+    width: 70%;
+  }
+}
+@media (max-width: 350px) {
+  .mm-navbars_top,
+  .mm-panels {
+    width: 60%;
+  }
+}
+
+/*-------------------------------
+Estilos Formulario
+-----------------------------*/
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  background: no-repeat center bottom, center calc(100% - 1px);
+  background-size: 0 100%, 100% 100%;
+  transition: background 0s ease-out;
+}
+
+.form-control:focus {
+  border-bottom-color: transparent;
+  background-size: 100% 100%, 100% 100%;
+  transition-duration: 0.3s;
+  box-shadow: none;
+  background-image: linear-gradient(to top, $principal 2px, rgba(70, 128, 255, 0) 2px),
+    linear-gradient(to top, #ced4da 1px, rgba(206, 212, 218, 0) 1px);
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group .form-control {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.form-group .floating-label {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  font-size: 0.875rem;
+  z-index: 1;
+  cursor: text;
+  transition: all 0.3s ease;
+}
+
+.form-group .floating-label + .form-control {
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+}
+
+.form-group.fill .floating-label {
+  top: -10px;
+  font-size: 0.75rem;
+  color: $principal;
+}
+
+.card-auxi {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-circle {
+  width: 40px;
+  height: 40px;
+  padding: 10px 0px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.42857;
+}
+.btn-circle2 {
+  width: 30px;
+  height: 30px;
+  padding: 5px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.42857;
+}
+
+.accordion-style-4 .card {
+  margin-bottom: 10px;
+  border-width: 0 0 0 2px;
+  border-style: solid;
+  border-color: $principal;
+  border-radius: 0;
+}
+.accordion-style-4 .card-header {
+  padding-right: 60px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
+.accordion-style-4 .card-header[aria-expanded="true"]:before,
+.accordion-style-4 .card-header[aria-expanded="false"]:before {
+  bottom: -1px;
+  color: $principal;
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 19px;
+  right: 0;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  vertical-align: middle;
+  width: 50px;
+  transform: rotate(45deg);
+  transition: 0.3s linear all;
+}
+.accordion-style-4 .card-header[aria-expanded="false"]:before {
+  transform: rotate(0deg);
+  transition: 0.3s linear all;
+}
+
+.estiloTarjeta {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#swiperBeneficios,
+#swiperBeneficiosNav,
+#swiperTipos,
+#swiperTiposNav {
+  z-index: 0;
+}
+
+.pedidos {
+  .col {
+    border-bottom: 1px dashed $principal;
+    border-right: 1px dashed $principal;
+    &:nth-child(even) {
+      border-right: none;
+    }
+    &:nth-child(n + 9) {
+      border-bottom: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .pedidos {
+    .col {
+      &:nth-child(n) {
+        border-right: 1px dashed $principal;
+      }
+      &:nth-child(5n + 5) {
+        border-right: none;
+      }
+      &:nth-child(n + 6) {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+/* --------------Vista Xl ------------- */
+@media (min-width: 1200px) {
+  .pedidos .container-lg {
+    max-width: 960px;
+  }
+}
+
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: $principal;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #fff6e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #45505b;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #728394;
+}
+
+.contact .info .email:hover i,
+.contact .info .calle:hover i,
+.contact .info .fax:hover i,
+.contact .info .certificado:hover i,
+.contact .info .telefono:hover i {
+  background: $principal;
+  color: #fff;
+}
+
+.alert-primary {
+  color: $secundario;
+  background-color: rgba($color: $principal, $alpha: 0.5);
+  border-color: $principal;
+}
+.estiloProducto {
+  display: block;
+  position: relative;
+  //overflow: hidden; //para que la imagen no se salga
+  transition: all 0.4s ease;
+}
+/* .estiloProducto:hover {
+  // box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+} */
+
+.estiloProducto .img img {
+  width: 100&;
+  transition: all 0.4s ease;
+}
+
+.estiloProducto .img:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1) drop-shadow(0px 2px 15px rgba(0, 0, 0, 0.1));
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader::after {
+  content: url("../images/logo/iconoNera.png");
+  position: fixed;
+  top: calc(-50% - 203px);
+  left: calc(0% - 43px);
+  transform: scale(0.03);
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  border: 6px solid $principal;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  background: $principal;
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 7px;
+  left: 9px;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #d58b02;
+  transition: background 0.2s ease-in-out;
+}
+
+
+/* Seccion de new styles */
+.preload {
+  overflow: hidden;
+}
+
+.preload-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)),url("../images/logo/preload.png") center center / cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999999999;
+  /* display: block; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preload-logo {
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+  z-index: 100;
+  /* margin: -30px 0 60 -90px; */
+  /* background: #ffffff; */
+  border-radius: 50%;
+  background-image: url("../images/logo/iconoNera.png");
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation: preload 1s linear infinite alternate;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+
+// Estilo para el video
+.contenedor-video{
+  z-index: 10;
+  border-radius: 15px;
+  // box-shadow: 5px 5px 20px 1px rgba($color: $principal, $alpha: .1);
+  box-shadow: 0 -2rem 5rem 1rem rgba($colorBg, 60%);
+}
+.contenedor-video a {
+  background-color: rgba(white, .7);
+  width: 7rem;
+  height: 7rem;
+  // ponemos flex xq a los elementos inline no se le asigna width ni height
+  display: flex;
+  border-radius: 50%;
+  color: $principal;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  top: 50%;
+  left: 50%;
+  // mueve el porcentaje del tamaño del tamaño del elemento
+  transform: translate(-50%, -50%);
+
+  background-clip: padding-box; /* asemos que el border creado no se una con el color de fondo y con padding se aleja del color */
+  border: 0 solid transparent;
+  transition: all 0.5s ease;
+}
+
+.contenedor-video .capa2{
+  background: $colorBg;
+  opacity: .5;
+  // mix-blend-mode: overlay;
+  width: 100%;
+  height: 100%;
+ 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  transition: all 0.5s ease;
+}
+.contenedor-video:hover .capa2{
+  opacity: .3;
+}
+.contenedor-video a:hover {
+  background-color: $principal;
+  color: white;
+
+  border: 0.8rem solid rgba(white, 0.5);
+}
+
+/* // bootstrap usa text-truncate para hacer lo mismo
+.contenedor-video{
+    overflow: hidden;
+} */
+.contenedor-video img {
+  transition: all 0.5s ease;
+}
+.contenedor-video:hover img {
+  transform: scale(1.2);
+}
+
+.vbox-close{
+margin-top: 20px;
+margin-right: 20px;
+color: $principal !important;
+}
+
+@media (min-width: 992px){
+  .venoratio {
+    width: 960px;
+    height: 540px;
+  }
+}
+
+// #9a13d2
+.content-nft,
+.content-nft-box {
+  background:url(../images/portadas/fondito.jpg) center center /cover;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 12px 7px #9a13d2;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 600ms;
+}
+.content-nft-box{
+  background: transparent !important;
+}
+.content-nft-box:hover{
+  box-shadow: inset 0px 0px 12px 7px $principal;
+}
+.content-nft:hover{
+  transform: rotateY(180deg) translateY(-5px);
+}
+.content-nft:hover .back{
+  opacity: 1;
+}
+.content-nft .front{
+  transform-style: preserve-3d;
+}
+.content-nft .back{
+  background: $colorBg;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  box-shadow: inset 0px 0px 12px 7px $principal;
+  opacity: 0;
+}
+
+
+.content-nft .back{
+  transform: rotateY(180deg);
+  background: transparent;
+}
+.content-nft .front-body,
+.content-nft .back-body{
+  transform: translateZ(60px);
+}
+
+.content-nft li{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.content-nft h2,
+.content-nft-box h2{
+  font-size: 35px !important;
+}
+// Retomacion del proyecto
+.portadita video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.portadita .capa{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $secundario;
+  opacity: .5;
+  mix-blend-mode: overlay;
+}
+.tituloContenido{
+  position: relative;
+  z-index: 2;
+}
+.portadita .contenido-animado img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#logo1{
+  width: 350px;
+}
+#logo2{
+  width: 300px;
+}
+#logo3{
+  width: 150px;
+}
+#logo4{
+  width: 400px;
+}
+#nameLogo{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#pLogo{
+  position: absolute;
+  width: 70%;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.portadita img{
+  position: absolute;
+  top: 0;
+  // object-fit: cover;
+}
+#segundaaa{
+  right: -5%;
+  height: 100%;
+  transform: scale(.8);
+  transform-origin: bottom;
+}
+#primeraaa{
+  left: -5%;
+  height: 100%;
+  transform: scale(.8);
+  transform-origin: bottom;
+}
+.swiper-container::before{
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ height: 30px;
+ background: linear-gradient(to top, #0c023128, transparent);
+ z-index: 5;
+}
+
+.bg-detail{
+  // box-shadow: 0px 0px 32px 13px rgba(108,120,232,0.75);
+  box-shadow: 0 -2rem 5rem 1rem rgba($colorBg, 60%);
+  padding-top: 10rem !important;
+  padding-bottom: 10rem !important;
+  // box-shadow: inset 0px 0px 10px 7px #00a2ff46;
+  border-radius: 25px;
+  background: url(../images/portadas/fondito.jpg) center center / cover;
+}
+.bg-detail2{
+  // box-shadow: 0px 0px 32px 13px rgba(108,120,232,0.75);
+  box-shadow: 0 -2rem 5rem 1rem rgba($colorBg, 60%);
+  padding-top: 8rem !important;
+  padding-bottom: 8rem !important;
+  // box-shadow: inset 0px 0px 10px 7px #00a2ff46;
+  border-radius: 25px;
+  background: url(../images/portadas/fondito.jpg) center center / cover;
+}
+@media (max-width: 992px){
+  .bg-detail{
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .bg-detail2{
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+}
+
+.btn-primario,
+.btn-secundario{
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 35px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in;
+}
+.btn-primary{
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 35px;
+  border-radius: 50px;
+  transition: all .3s ease;
+}
+.btn-primario{
+  box-shadow: inset 0px 0px 8px 5px $principal;
+}
+.btn-tab{
+  border-radius: 10px;
+  padding: 5px;
+  transition: all .3s ease;
+}
+.btn-secundario,
+.btn-tab{
+  transition: all .3s ease;
+  box-shadow: inset 0px 0px 10px 7px #00a2ff;
+}
+.btn-primario:hover{
+  color: white;
+  box-shadow: inset 0px 0px 10px 7px #00a2ff;
+}
+.btn-secundario:hover,
+.btn-secundario:focus,
+.btn-tab:hover,
+.btn-tab:focus,
+.btn-tab .active{
+  color: white;
+  box-shadow: inset 0px 0px 10px 7px $principal;
+}
+.btn-tab:focus{
+  transform: translateY(-5px);
+}
+.content-nft-box .nav-item .active{
+  color: white;
+  box-shadow: inset 0px 0px 10px 7px $principal;
+  transform: translateY(-5px);
+}
+.btn-primary:hover{
+  background: transparent !important;
+  color: white !important;
+  box-shadow: inset 0px 0px 10px 7px $principal !important;
+}
+
+// Seccion de animaciones
+.section-game .content-nft-box,
+.section-mode .content-nft-box{
+  background-color: $colorBg !important;
+}
+.section-game .imagen2,
+.section-game .imagen3{
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all .3s ease;
+}
+.contenido-mode,
+.contenido-game{
+  width: 100%;
+  margin: auto;
+  transition: all .3s ease;
+}
+.contenido-game:hover{
+  width: 75%;
+}
+.section-game .imagen2{
+  transform: rotate(3deg) translateX(15px);
+}
+.section-game .imagen3{
+  transform: rotate(-3deg) translateX(-15px);
+}
+.contenido-game:hover .imagen3{
+  transform: rotate(10deg) translate(75%,-10%);
+}
+.contenido-game:hover .imagen2{
+  transform: rotate(-10deg) translate(-75%,-10%);
+}
+.contenido-game:hover .imagen1{
+  transform: translateY(-10%);
+}
+.contenedor-video{
+  width: 75%;
+  transition: all .3s ease-in-out;
+}
+.contenedor-video:hover{
+  width: 100%;
+}
+@media (max-width: 992px){
+  .contenido-game{
+    width: 50%;
+  }
+  .contenido-game:hover{
+    width: 40%;
+  }
+  .contenedor-video{
+    width: 80%;
+    transition: all .3s ease-in-out;
+  }
+  .contenedor-video:hover{
+    width: 83%;
+  }
+}
+
+
+// Seccion de cards
+
+.card-slide{
+  border-radius: 10px;
+  padding: 40px 20px;
+  box-shadow: inset 0px 0px 10px #00a2ff;
+  background: $colorCard;
+  transition: all 0.3s ease-in;
+}
+.card-slide:hover{
+  box-shadow: inset 0px 0px 8px 3px #fea036;
+}
+.card-circle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 15px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 10px #00a2ff;
+  background: $colorCard;
+  transition: all .3s ease-in;
+  opacity: 0;
+}
+.card-circle:hover{
+  box-shadow: inset 0px 0px 8px 3px #fea036;
+}
+.imagenNera{
+  width: 100%;
+  margin: auto;
+  transition: all .3s ease;
+}
+.imagenNera:hover{
+  width: 90%;
+}
+.imagenNera:hover .card-circle{
+  opacity: 1;
+}
+.imagenNera:hover .content-circle1{
+  transform: translate(100%,-200%);
+}
+.imagenNera:hover .content-circle2{
+  transform: translate(100%,100%);
+}
+.imagenNera:hover .content-circle3{
+  transform: translate(-150%,-200%);
+}
+.imagenNera:hover .content-circle4{
+  transform: translate(-150%,100%);
+}
+@media (max-width: 992px){
+  .imagenNera:hover{
+    width: 50%;
+  }
+  .imagenNera:hover .content-circle1{
+    transform: translate(100%,-100%);
+  }
+  .imagenNera:hover .content-circle2{
+    transform: translate(100%,25%);
+  }
+  .imagenNera:hover .content-circle3{
+    transform: translate(-200%,-100%);
+  }
+  .imagenNera:hover .content-circle4{
+    transform: translate(-200%,25%);
+  }
+}
+
+.section-mode .imagen2,
+.section-mode .imagen3,
+.section-mode .imagen4{
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all .3s ease;
+}
+.section-mode .modos-game{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all .3s ease;
+}
+.contenido-mode{
+  width: 85%;
+}
+
+.section-mode .imagen2{
+  transform: rotate(-3deg) translateX(-15px);
+}
+.section-mode .imagen3{
+  transform: rotate(3deg) translateX(15px);
+}
+.section-mode .imagen4{
+  transform: rotate(-5deg) translateX(-25px);
+}
+.section-mode .imagen1{
+  transform: rotate(-1deg) translateX(-5px);
+}
+.contenido-mode:hover .imagen3{
+  transform: rotate(15deg) translateX(75%);
+}
+.contenido-mode:hover .imagen4{
+  transform: rotate(-15deg) translateX(-75%);
+}
+.contenido-mode:hover .imagen2{
+  transform: rotate(-10deg) translateX(-25%);
+}
+.contenido-mode:hover .imagen1{
+  transform: rotate(10deg) translateX(25%);
+}
+.contenido-mode:hover .modos-game1{
+  z-index: 5;
+  transform: translate(130%,-200%) rotate(-15deg);
+}
+.contenido-mode:hover .modos-game2{
+  transform: translate(-230%,-150%) rotate(-15deg);
+}
+.contenido-mode:hover .modos-game3{
+  z-index: 5;
+  transform: translate(-50%,-230%);
+}
+.contenido-mode:hover .modos-game4{
+  z-index: 5;
+  transform: translate(130%,120%) rotate(-15deg);
+}
+.contenido-mode:hover .modos-game5{
+  z-index: 5;
+  transform: translate(-230%,120%) rotate(5deg);
+}
+.contenido-mode:hover .modos-game6{
+  z-index: 5;
+  transform: translate(-50%,100%);
+}
+@media (max-width: 992px){
+  .contenido-mode{
+    width: 40%;
+  }
+  .contenido-mode .modos-game{
+    width: 50%;
+  }
+}
+
+.slidersito .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.slidersito .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  background: transparent !important;
+  padding: 30px 30px;
+  width: 350px;
+  height: auto;
+  // -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0006);
+}
+
+.slidersito .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right{
+  background: none !important;
+}
+.slidersito .card-slide{
+  background: transparent !important;
+}
