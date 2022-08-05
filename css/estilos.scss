@@ -1504,6 +1504,20 @@ color: $principal !important;
 .logonaso4{
   width: 300px;
 }
+@media (max-width: 450px){
+  .logonaso1{
+    width: 250px;
+  }
+  .logonaso2{
+    width: 250px;
+  }
+  .logonaso3{
+    width: 100px;
+  }
+  .logonaso4{
+    width: 200px;
+  }
+}
 .tituloLogo{
   position: absolute;
   bottom: 0;
