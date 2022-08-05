@@ -1980,9 +1980,9 @@ box-shadow: inset -1px 3px 8px 5px $colorCard, 2px 5px 16px 0px #0B325E, 5px 5px
   display: inline-block;
   margin-top: 0px;
   position: absolute;
-  right: 0px;
-  top: 0px;
-  height: 60px;
+  right: 5px;
+  top: 5px;
+  height: 50px;
   background: none;
   border: 0px;
   background: #1A0E22;
@@ -1999,6 +1999,11 @@ box-shadow: inset -1px 3px 8px 5px $colorCard, 2px 5px 16px 0px #0B325E, 5px 5px
   .btn-primario,
   .btn-secundario{
     font-size: 14px;
+    padding: 8px 20px;
+  }
+  .section-game .btn-primario,
+  .section-game .btn-secundario{
+    font-size: 11px;
     padding: 8px 20px;
   }
 }

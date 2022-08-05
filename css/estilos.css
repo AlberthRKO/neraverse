@@ -2158,9 +2158,9 @@ input::placeholder {
   display: inline-block;
   margin-top: 0px;
   position: absolute;
-  right: 0px;
-  top: 0px;
-  height: 60px;
+  right: 5px;
+  top: 5px;
+  height: 50px;
   background: none;
   border: 0px;
   background: #1A0E22;
@@ -2180,6 +2180,11 @@ input::placeholder {
   .btn-primario,
   .btn-secundario {
     font-size: 14px;
+    padding: 8px 20px;
+  }
+  .section-game .btn-primario,
+  .section-game .btn-secundario {
+    font-size: 11px;
     padding: 8px 20px;
   }
 }
