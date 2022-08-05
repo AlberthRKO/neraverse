@@ -19,6 +19,99 @@ $(function () {
     // console.log("callback - particles.js config loaded");
   });
 
+  // seccion de animacion
+  // configuracion de Gsap
+  gsap.to("#videoNera", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    scale: 1.5,
+  });
+  gsap.to("#logo1", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    x: -500,
+  });
+  gsap.to("#logo2", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    x: 500,
+  });
+  gsap.to("#logo3", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    y: 500,
+  });
+  gsap.to("#logo4", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    y: -500,
+  });
+  gsap.to("#nameLogo", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    y: -500,
+    scale: 2.5,
+  });
+  gsap.to("#primeraaa", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    x: -1000,
+    scale: 0.5,
+  });
+  gsap.to("#segundaaa", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    x: 1000,
+    scale: 0.5,
+  });
+  gsap.to("#pLogo", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    y: -500,
+    scale: 1.5,
+  });
+  gsap.to("#content-box", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    y: -300,
+    scale: 1.5,
+  });
+  gsap.to("#content-box-2", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    y: -300,
+    scale: 1.3,
+  });
+  gsap.to("#acompañante", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    y: -300,
+  });
+  gsap.to("#secciones", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    y: -300,
+  });
+  gsap.to("#slideTipos", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    y: -300,
+  });
+
   /* ------------------------------------
   1. Configuración de Mmenu.js 
   -------------------------------------*/
