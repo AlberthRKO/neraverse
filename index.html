@@ -48,9 +48,7 @@
 </head>
 
 <body>
-    <div class="preload preload-container">
-        <div class="preload-logo"></div>
-    </div>
+
     <div id="my-page" style="background: url('images/portadas/bg.webp');">
         <div id="particle-js"></div>
 
@@ -167,9 +165,10 @@
                     <!-- <video id="videoNera" muted autoplay loop>
                         <source src="images/video.mp4" type="video/mp4">
                     </video> -->
-                    <img id="primeraaa" class="d-none d-xl-block" src="images/portadas/primero.png" alt="">
-                    <img id="segundaaa" class="d-none d-xl-block" src="images/portadas/segundo.png" alt="">
-                    <h2 id="nameLogo" class="display-1 fw-bold text-uppercase text-primary text-center">
+                    <img id="primeraaa" class="primeraaa d-none d-xl-block" src="images/portadas/primero.png" alt="">
+                    <img id="segundaaa" class="segundaaa d-none d-xl-block" src="images/portadas/segundo.png" alt="">
+                    <h2 id="nameLogo"
+                        class="position-absolute bottom-0 display-1 fw-bold text-uppercase text-primary text-center">
                         Neraverse </h2>
                     <!-- <p id="pLogo" class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
                         nesciunt modi
@@ -857,7 +856,9 @@
 
 
 
-
+    <div id="preloader" class="preload preload-container">
+        <div class="preload-logo"></div>
+    </div>
 
 
     <!-- Carga de jQuery -->

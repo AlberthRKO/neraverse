@@ -1200,7 +1200,7 @@ Estilos Formulario
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -1232,7 +1232,7 @@ Estilos Formulario
   height: 100px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
-}
+} */
 
 @-webkit-keyframes animate-preloader {
   0% {
@@ -1492,19 +1492,19 @@ color: $principal !important;
   left: 50%;
   transform: translate(-50%,-50%);
 }
-#logo1{
+.logonaso1{
   width: 350px;
 }
-#logo2{
-  width: 300px;
+.logonaso2{
+  width: 350px;
 }
-#logo3{
+.logonaso3{
   width: 150px;
 }
-#logo4{
-  width: 400px;
+.logonaso4{
+  width: 300px;
 }
-#nameLogo{
+.tituloLogo{
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -1522,13 +1522,13 @@ color: $principal !important;
   top: 0;
   // object-fit: cover;
 }
-#segundaaa{
+.segundaaa{
   right: -5%;
   height: 100%;
   transform: scale(.8);
   transform-origin: bottom;
 }
-#primeraaa{
+.primeraaa{
   left: -5%;
   height: 100%;
   transform: scale(.8);
