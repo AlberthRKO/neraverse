@@ -21,7 +21,7 @@ body {
 .display-4,
 .display-5,
 .display-6 {
-  font-family: 'builti', cursive;
+  font-family: 'builti', sans-serif;
 }
 
 h1, h2, h3 {
@@ -33,7 +33,7 @@ h1, h2, h3 {
 }
 
 nav {
-  font-family: 'Oxanium', cursive;
+  font-family: 'Oxanium', sans-serif;
 }
 
 section {
@@ -2201,5 +2201,24 @@ input::placeholder {
     font-size: 11px;
     padding: 8px 20px;
   }
+}
+
+@media (max-width: 420px) {
+  .personajes .back-body p {
+    font-size: 8px;
+  }
+  .personajes .back-body h2 {
+    font-size: 16px !important;
+  }
+  .personajes .btn-primario,
+  .personajes .btn-secundario,
+  .personajes .btn-primary {
+    font-size: 10px;
+    padding: 8px 20px;
+  }
+}
+
+.nameLogo {
+  z-index: 50;
 }
 /*# sourceMappingURL=estilos.css.map */

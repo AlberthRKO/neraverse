@@ -33,7 +33,7 @@ body {
 .display-4,
 .display-5,
 .display-6{
-  font-family: 'builti', cursive;
+  font-family: 'builti', sans-serif;
 }
 h1,h2,h3{
   color: white !important;
@@ -42,7 +42,7 @@ h1,h2,h3{
   color: $principal !important;
 }
 nav{
-  font-family: 'Oxanium', cursive;
+  font-family: 'Oxanium', sans-serif;
 }
 section{
   z-index: 15;
@@ -2021,4 +2021,23 @@ box-shadow: inset -1px 3px 8px 5px $colorCard, 2px 5px 16px 0px #0B325E, 5px 5px
     font-size: 11px;
     padding: 8px 20px;
   }
+  
+}
+@media (max-width: 420px){
+  .personajes .back-body p{
+    font-size: 8px;
+  }
+  .personajes .back-body h2{
+    font-size: 16px !important;
+  }
+  .personajes .btn-primario,
+  .personajes .btn-secundario,
+  .personajes .btn-primary{
+    font-size: 10px;
+    padding: 8px 20px;
+  }
+}
+
+.nameLogo{
+  z-index: 50;
 }
