@@ -2205,10 +2205,10 @@ input::placeholder {
 
 @media (max-width: 420px) {
   .personajes .back-body p {
-    font-size: 8px;
+    font-size: 10px;
   }
   .personajes .back-body h2 {
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
   .personajes .btn-primario,
   .personajes .btn-secundario,
