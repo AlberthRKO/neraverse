@@ -2196,6 +2196,12 @@ input::placeholder {
     font-size: 14px;
     padding: 8px 20px;
   }
+  .imagenPor {
+    width: 250px !important;
+  }
+  .imagenTigre {
+    width: 300px !important;
+  }
   .section-game .btn-primario,
   .section-game .btn-secundario {
     font-size: 11px;
