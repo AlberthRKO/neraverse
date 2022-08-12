@@ -42,7 +42,7 @@ h1,h2,h3{
   color: $principal !important;
 }
 nav{
-  font-family: 'Oxanium', sans-serif;
+  font-family: 'Exo', sans-serif;
 }
 section{
   z-index: 15;
@@ -1685,7 +1685,7 @@ color: $principal !important;
   transition: all .3s ease-in-out;
 }
 .contenedor-video:hover{
-  width: 100%;
+  width: 90%;
 }
 @media (max-width: 992px){
   .contenido-game{
@@ -2047,4 +2047,28 @@ box-shadow: inset -1px 3px 8px 5px $colorCard, 2px 5px 16px 0px #0B325E, 5px 5px
 
 .nameLogo{
   z-index: 50;
+}
+
+.section-nav{
+  height: 500px;
+  background:linear-gradient(rgba($colorBg,.7), rgba($colorBg,.9)), url('../images/portadas/portada3.jpg') center center / cover ; background-repeat: no-repeat;
+}
+.section-nav h2{
+  font-weight: bold;
+  font-family: 'Exo', sans-serif;
+}
+.video-about{
+  padding-top: 15rem !important;
+}
+.video-about .contenedor-video{
+  box-shadow: 0 0 5rem 10px rgba($colorBg, 20%);
+}
+@media (max-width: 992px){
+  .video-about{
+    padding-top: 7rem !important;
+    z-index: 10;
+  }
+  .video-about .contenedor-video{
+    box-shadow: 0 -2rem 5rem 1rem rgba($colorBg, 20%);
+  }
 }

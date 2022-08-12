@@ -33,7 +33,7 @@ h1, h2, h3 {
 }
 
 nav {
-  font-family: 'Oxanium', sans-serif;
+  font-family: 'Exo', sans-serif;
 }
 
 section {
@@ -1751,7 +1751,7 @@ Estilos Formulario
 }
 
 .contenedor-video:hover {
-  width: 100%;
+  width: 90%;
 }
 
 @media (max-width: 992px) {
@@ -2226,5 +2226,41 @@ input::placeholder {
 
 .nameLogo {
   z-index: 50;
+}
+
+.section-nav {
+  height: 500px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(9, 0, 42, 0.7)), to(rgba(9, 0, 42, 0.9))), url("../images/portadas/portada3.jpg") center center/cover;
+  background: linear-gradient(rgba(9, 0, 42, 0.7), rgba(9, 0, 42, 0.9)), url("../images/portadas/portada3.jpg") center center/cover;
+  background-repeat: no-repeat;
+}
+
+.section-nav h2 {
+  font-weight: bold;
+  font-family: 'Exo', sans-serif;
+}
+
+.video-about {
+  padding-top: 15rem !important;
+}
+
+.video-about .contenedor-video {
+  -webkit-box-shadow: 0 0 5rem 10px #09002a;
+          box-shadow: 0 0 5rem 10px #09002a;
+}
+
+@media (max-width: 992px) {
+  .video-about {
+    padding-top: 7rem !important;
+    z-index: 10;
+  }
+  .video-about .contenedor-video {
+    -webkit-box-shadow: 0 -2rem 5rem 1rem #09002a;
+            box-shadow: 0 -2rem 5rem 1rem #09002a;
+  }
+}
+
+.contenido-history {
+  z-index: 25 !important;
 }
 /*# sourceMappingURL=estilos.css.map */

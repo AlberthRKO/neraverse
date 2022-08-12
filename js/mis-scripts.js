@@ -102,6 +102,13 @@ $(function () {
     y: -300,
     scale: 1.3,
   });
+  gsap.to("#content-box-video", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    y: -200,
+    scale: 1.2,
+  });
   gsap.to("#acompañante", {
     scrollTrigger: {
       scrub: 1,
