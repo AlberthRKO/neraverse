@@ -2174,6 +2174,23 @@ box-shadow: inset -1px 3px 8px 5px $colorCard, 2px 5px 16px 0px #0B325E, 5px 5px
 
 
 
+.cancel-buy .bg-detail{
+  // border: 1px solid red;
+  box-shadow: 0 1rem 4rem 0rem rgba($color: rgb(173, 63, 63), $alpha: .6) !important;
+}
+.cancel-buy .bg-detail:hover{
+  border-bottom: 1px solid red;
+  box-shadow: 0 1rem 4rem -1rem rgba($color: red, $alpha: 0.3);
+}
+.success-buy .bg-detail{
+  // border: 1px solid red;
+  box-shadow: 0 1rem 4rem 0rem rgba($color: #28A745, $alpha: .6) !important;
+}
+.success-buy .bg-detail:hover{
+  border-bottom: 1px solid $principal;
+  box-shadow: 0 1rem 4rem -1rem rgba($color: $principal, $alpha: 0.3);
+}
+
 
 
 

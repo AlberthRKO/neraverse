@@ -2399,6 +2399,28 @@ input::placeholder {
   z-index: 1000;
 }
 
+.cancel-buy .bg-detail {
+  -webkit-box-shadow: 0 1rem 4rem 0rem rgba(173, 63, 63, 0.6) !important;
+          box-shadow: 0 1rem 4rem 0rem rgba(173, 63, 63, 0.6) !important;
+}
+
+.cancel-buy .bg-detail:hover {
+  border-bottom: 1px solid red;
+  -webkit-box-shadow: 0 1rem 4rem -1rem rgba(255, 0, 0, 0.3);
+          box-shadow: 0 1rem 4rem -1rem rgba(255, 0, 0, 0.3);
+}
+
+.success-buy .bg-detail {
+  -webkit-box-shadow: 0 1rem 4rem 0rem rgba(40, 167, 69, 0.6) !important;
+          box-shadow: 0 1rem 4rem 0rem rgba(40, 167, 69, 0.6) !important;
+}
+
+.success-buy .bg-detail:hover {
+  border-bottom: 1px solid #e99800;
+  -webkit-box-shadow: 0 1rem 4rem -1rem rgba(233, 152, 0, 0.3);
+          box-shadow: 0 1rem 4rem -1rem rgba(233, 152, 0, 0.3);
+}
+
 .dataTables_wrapper {
   padding: .5rem 0;
 }
