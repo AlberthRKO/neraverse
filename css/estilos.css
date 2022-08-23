@@ -2260,7 +2260,312 @@ input::placeholder {
   }
 }
 
-.contenido-history {
-  z-index: 25 !important;
+.section-login .bg-detail {
+  position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-box-shadow: 0 0rem 5rem 1rem #330662;
+          box-shadow: 0 0rem 5rem 1rem #330662;
+  border: 2px solid #330662;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.section-panel .bg-detail {
+  border: 1px solid #330662;
+  -webkit-box-shadow: 0 1rem 4rem 0rem rgba(51, 6, 98, 0.6);
+          box-shadow: 0 1rem 4rem 0rem rgba(51, 6, 98, 0.6);
+}
+
+.section-login .bg-detail::before {
+  content: "";
+  position: absolute;
+  background: url("../images/poster 2.png") center center/cover;
+  border-radius: 30px;
+  opacity: .2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: wave 2s ease-in-out infinite alternate both;
+  animation: wave 2s ease-in-out infinite alternate both;
+  z-index: -2;
+}
+
+.neraArriba {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.section-login .bg-detail:hover .neraArriba {
+  margin-top: -8rem;
+}
+
+.section-login .bg-detail:hover {
+  border: transparent;
+  border-bottom: 2px solid #e99800;
+  -webkit-box-shadow: 0 1rem 4rem -1rem rgba(233, 152, 0, 0.3);
+          box-shadow: 0 1rem 4rem -1rem rgba(233, 152, 0, 0.3);
+}
+
+.section-login .inputsito::-webkit-input-placeholder {
+  color: white;
+}
+
+.section-login .inputsito:-ms-input-placeholder {
+  color: white;
+}
+
+.section-login .inputsito::-ms-input-placeholder {
+  color: white;
+}
+
+.section-login .inputsito::placeholder {
+  color: white;
+}
+
+.section-login .inputsito:focus::-webkit-input-placeholder {
+  color: gray;
+}
+
+.section-login .inputsito:focus:-ms-input-placeholder {
+  color: gray;
+}
+
+.section-login .inputsito:focus::-ms-input-placeholder {
+  color: gray;
+}
+
+.section-login .inputsito:focus::placeholder {
+  color: gray;
+}
+
+.section-login .inputsito:focus .section-login .input-icon i {
+  color: red;
+}
+
+.section-login .inputsito,
+.section-login .inputsito:focus {
+  color: white;
+  padding-left: 50px;
+}
+
+.section-login .input-icon i {
+  position: absolute;
+  left: 20px;
+  top: 17px;
+}
+
+.section-panel .card-slide {
+  margin-bottom: 1rem;
+  padding: 20px;
+  background: transparent !important;
+}
+
+.section-panel .img-redondeado {
+  border-radius: 50% !important;
+}
+
+.section-panel .img-redondeado img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-panel .card-slide p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.imagenEdit {
+  border-radius: 10px;
+  position: relative;
+}
+
+.section-panel .imagenAva {
+  position: relative;
+}
+
+.section-panel .imagenAva::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0c023128), to(transparent));
+  background: linear-gradient(to top, #0c023128, transparent);
+  z-index: 1000;
+}
+
+.dataTables_wrapper {
+  padding: .5rem 0;
+}
+
+table.dataTable {
+  border-collapse: collapse !important;
+}
+
+table.dataTable > tbody > tr {
+  background-color: transparent;
+}
+
+.dataTables_paginate span {
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+.dataTables_paginate .previous,
+.dataTables_paginate .next,
+.dataTables_paginate span a {
+  padding: 5px;
+  margin: 0 3px;
+  background: transparent;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.dataTables_paginate span a:hover,
+.dataTables_paginate span a.current {
+  border: 1px solid #e99800;
+}
+
+.page-item.active .page-link,
+.page-item:not(:first-child) .page-link {
+  padding: 5px;
+  margin: 0 3px;
+  background: transparent;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dataTables_wrapper .dataTables_length select {
+  background: transparent;
+  color: white;
+  border: none;
+  border: 1px solid #e99800;
+  border-radius: 5px;
+  padding: 0 3px;
+  outline: none;
+}
+
+.dataTables_wrapper .dataTables_length select option {
+  border: none;
+  background-color: transparent !important;
+}
+
+.dataTables_wrapper .dataTables_length select:hover,
+.dataTables_wrapper .dataTables_length select:focus,
+.dataTables_paginate .previous:hover,
+.dataTables_paginate .next:hover,
+.dataTables_paginate span a:hover {
+  background: transparent;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  margin-top: 10px;
+  background: transparent;
+  border: none;
+  padding: 5px 5px;
+  border-bottom: 2px solid rgba(192, 192, 192, 0.3);
+  color: white;
+  border-radius: 5px;
+  outline: none;
+}
+
+.dataTables_wrapper .dataTables_filter input:focus,
+.dataTables_wrapper .dataTables_filter input:hover {
+  border-bottom: 2px solid #e99800;
+  background: transparent;
+}
+
+table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, table.dataTable tfoot td, table.dataTable tbody td, table.dataTable tbody th {
+  text-align: left !important;
+}
+
+.select-selected {
+  background-color: red !important;
+}
+
+thead tr {
+  background: -webkit-gradient(linear, left top, right top, from(#330662), to(#0c0231)) !important;
+  background: linear-gradient(to right, #330662, #0c0231) !important;
+}
+
+th {
+  white-space: nowrap;
+}
+
+.wave {
+  -webkit-animation: wave 2s ease-in-out infinite alternate both;
+  animation: wave 2s ease-in-out infinite alternate both;
+}
+
+/* ------- */
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+}
+
+.slide_up_down {
+  -webkit-animation: slide_up_down 1.7s ease-in-out infinite alternate both;
+  animation: slide_up_down 1.7s ease-in-out infinite alternate both;
+}
+
+/* ------- */
+@-webkit-keyframes slide_up_down {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes slide_up_down {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

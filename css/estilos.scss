@@ -2072,3 +2072,304 @@ box-shadow: inset -1px 3px 8px 5px $colorCard, 2px 5px 16px 0px #0B325E, 5px 5px
     box-shadow: 0 -2rem 5rem 1rem rgba($colorBg, 20%);
   }
 }
+
+// Seccion de login
+
+.section-login .bg-detail{
+  position: relative;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 0rem 5rem 1rem rgba($colorCard, 60%);
+  border: 2px solid $colorCard;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.section-panel .bg-detail{
+  border: 1px solid $colorCard;
+  // box-shadow: 0 0 4rem 1rem rgba($colorCard, 60%);
+  box-shadow: 0 1rem 4rem 0rem rgba($color: $colorCard, $alpha: 0.6);
+}
+.section-login .bg-detail::before{
+  content: "";
+  position: absolute;
+  background: url("../images/poster\ 2.png") center center / cover;
+  border-radius: 30px;
+  opacity: .2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: wave 2s ease-in-out infinite alternate both;
+  animation: wave 2s ease-in-out infinite alternate both;
+  z-index: -2;
+}
+.neraArriba{
+  transition: all .3s ease;
+}
+.section-login .bg-detail:hover .neraArriba{
+  margin-top: -8rem;
+}
+.section-login .bg-detail:hover{
+  border: transparent;
+  border-bottom: 2px solid $principal;
+  box-shadow: 0 1rem 4rem -1rem rgba($color: $principal, $alpha: 0.3);
+}
+
+.section-login .inputsito::placeholder{
+  color: white;
+}
+.section-login .inputsito:focus::placeholder{
+  color: gray;
+}
+.section-login .inputsito:focus .section-login .input-icon i{
+  color: red;
+}
+
+.section-login .inputsito,
+.section-login .inputsito:focus{
+  color: white;
+  padding-left: 50px;
+}
+.section-login .input-icon i{
+  position: absolute;
+  left: 20px;
+  top: 17px;
+}
+
+// Seccion de panel
+.section-panel .card-slide{
+  margin-bottom: 1rem;
+  padding: 20px;
+  background: transparent !important;
+}
+.section-panel .img-redondeado{
+  border-radius: 50% !important;
+}
+.section-panel .img-redondeado img{
+  width: 250px;
+  height: 250px; 
+  object-fit: cover;
+}
+.section-panel .card-slide p{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.imagenEdit{
+  border-radius: 10px;
+  position: relative;
+}
+.section-panel .imagenAva{
+  position: relative;
+}
+.section-panel .imagenAva::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #0c023128, transparent);
+  z-index: 1000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//* Estilos para el data Table
+
+.dataTables_wrapper{
+  padding: .5rem 0;
+}
+
+table.dataTable{
+  border-collapse: collapse !important;
+}
+table.dataTable>tbody>tr {
+  background-color: transparent;
+}
+
+.dataTables_paginate span{
+  padding: 0px 5px;
+  cursor: pointer;
+}
+.dataTables_paginate .previous,
+.dataTables_paginate .next,
+.dataTables_paginate span a{
+  padding: 5px;
+  margin: 0 3px;
+  background: transparent;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 12px;
+  text-decoration: none;
+}
+.dataTables_paginate span a:hover,
+.dataTables_paginate span a.current{
+  border: 1px solid $principal;
+}
+.page-item.active .page-link,
+.page-item:not(:first-child) .page-link{
+  padding: 5px;
+  margin: 0 3px;
+  background: transparent;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.page-item:first-child .page-link,
+.page-item:last-child .page-link{
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+// contador de datos
+.dataTables_wrapper .dataTables_length select{
+  background: transparent;
+  color: white;
+  border: none;
+  border: 1px solid $principal;
+  border-radius: 5px;
+  padding: 0 3px;
+  outline: none;
+}
+.dataTables_wrapper .dataTables_length select option{
+  border: none;
+  background-color: transparent !important;
+}
+.dataTables_wrapper .dataTables_length select:hover,
+.dataTables_wrapper .dataTables_length select:focus,
+.dataTables_paginate .previous:hover,
+.dataTables_paginate .next:hover,
+.dataTables_paginate span a:hover{
+  background: transparent;
+}
+.dataTables_wrapper .dataTables_filter input{
+  margin-top: 10px;
+  background: transparent;
+  border: none;
+  padding: 5px 5px;
+  border-bottom: 2px solid rgba($color: silver, $alpha: .3);
+  color: white;
+  border-radius: 5px;
+  outline: none;
+}
+.dataTables_wrapper .dataTables_filter input:focus,
+.dataTables_wrapper .dataTables_filter input:hover{
+  // border: none;
+  border-bottom: 2px solid $principal;
+  background: transparent;
+}
+table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, table.dataTable tfoot td, table.dataTable tbody td,table.dataTable tbody th {
+  text-align: left !important;
+}
+.select-selected {
+  background-color: red !important;
+}
+
+
+
+thead tr{
+  background: linear-gradient(to right, $colorCard, #0c0231) !important;
+}
+th{
+  white-space: nowrap;
+}
+
+
+
+
+// animacion
+.wave {
+  -webkit-animation: wave 2s ease-in-out infinite alternate both;
+  animation: wave 2s ease-in-out infinite alternate both;
+}
+
+/* ------- */
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+}
+.slide_up_down {
+  -webkit-animation: slide_up_down 1.7s ease-in-out infinite alternate both;
+  animation: slide_up_down 1.7s ease-in-out infinite alternate both;
+}
+
+/* ------- */
+@-webkit-keyframes slide_up_down {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes slide_up_down {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
