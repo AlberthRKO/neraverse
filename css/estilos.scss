@@ -2390,3 +2390,27 @@ th{
     transform: translateY(-20px);
   }
 }
+
+
+.autitos{
+  height: 250px;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+.kart-btn{
+  transition: all .3s ease;
+  border-bottom: 2px solid;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.kart-btn img{
+  transition: all .3s ease;
+}
+.kart-btn.active{
+  transform: translateY(-5px);
+  border-bottom: 2px solid $principal;
+}
+.kart-btn.active img{
+  transform: scale(1.045);
+}

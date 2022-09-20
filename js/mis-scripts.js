@@ -98,6 +98,13 @@ $(function () {
     y: -300,
     scale: 1.5,
   });
+  gsap.to("#content-box3", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    y: -300,
+    scale: 1.5,
+  });
   gsap.to("#content-box-2", {
     scrollTrigger: {
       scrub: 1,
