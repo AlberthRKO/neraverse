@@ -1286,9 +1286,9 @@ Estilos Formulario
 
 
 /* Seccion de new styles */
-.preload {
+/* .preload {
   overflow: hidden;
-}
+} */
 
 .preload-container {
   position: relative;
@@ -1321,10 +1321,24 @@ Estilos Formulario
   background-size: 150px;
   background-repeat: no-repeat;
   background-position: center center;
-  animation: preload 1s linear infinite alternate;
-  -webkit-animation-name: bounceIn;
-  animation-name: bounceIn;
+  animation: 1s linear infinite;
+  animation-name: bounce;
 }
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg); }
+  100% {
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg); } }
+
+@keyframes wave {
+  0% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg); }
+  100% {
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg); } }
 
 
 // Estilo para el video
@@ -1708,7 +1722,7 @@ color: $principal !important;
 
 .card-slide{
   border-radius: 10px;
-  padding: 40px 20px;
+  padding: 40px 10px;
   box-shadow: inset 0px 0px 10px #00a2ff;
   background: $colorCard;
   transition: all 0.3s ease-in;
@@ -2441,6 +2455,7 @@ th{
   border: none;
   background-color: $colorCard;
   transition: .4s;
+  color: white !important;
 }
 
 .step-button[aria-expanded="true"] {

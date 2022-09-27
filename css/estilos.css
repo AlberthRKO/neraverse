@@ -1261,10 +1261,9 @@ Estilos Formulario
 }
 
 /* Seccion de new styles */
-.preload {
+/* .preload {
   overflow: hidden;
-}
-
+} */
 .preload-container {
   position: relative;
   width: 100%;
@@ -1301,10 +1300,32 @@ Estilos Formulario
   background-size: 150px;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-animation: preload 1s linear infinite alternate;
-          animation: preload 1s linear infinite alternate;
-  -webkit-animation-name: bounceIn;
-  animation-name: bounceIn;
+  -webkit-animation: 1s linear infinite;
+          animation: 1s linear infinite;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
 }
 
 .contenedor-video {
@@ -1773,7 +1794,7 @@ Estilos Formulario
 
 .card-slide {
   border-radius: 10px;
-  padding: 40px 20px;
+  padding: 40px 10px;
   -webkit-box-shadow: inset 0px 0px 10px #00a2ff;
           box-shadow: inset 0px 0px 10px #00a2ff;
   background: #330662;
@@ -2654,6 +2675,7 @@ th {
   background-color: #330662;
   -webkit-transition: .4s;
   transition: .4s;
+  color: white !important;
 }
 
 .step-button[aria-expanded="true"] {

@@ -1,8 +1,8 @@
-$(document).ready(function () {
+/* $(document).ready(function () {
   $("#example").DataTable();
   let modalsito = $("#staticBackdrop");
   modalsito.addClass(modalsito.attr("data-animate-in"));
-});
+}); */
 $(window).on("load", function () {
   if ($("#preloader").length) {
     $("#preloader")
