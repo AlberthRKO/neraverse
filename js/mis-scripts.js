@@ -3,6 +3,15 @@ $(document).ready(function () {
   let modalsito = $("#staticBackdrop");
   modalsito.addClass(modalsito.attr("data-animate-in"));
 });
+$(window).on("load", function () {
+  if ($("#preloader").length) {
+    $("#preloader")
+      .delay(100)
+      .fadeOut("slow", function () {
+        $(this).remove();
+      });
+  }
+});
 $(function () {
   "use strict";
 
@@ -15,15 +24,6 @@ $(function () {
         });
     }
   }); */
-  $(window).on("load", function () {
-    if ($("#preloader").length) {
-      $("#preloader")
-        .delay(100)
-        .fadeOut("slow", function () {
-          $(this).remove();
-        });
-    }
-  });
 
   // localStorage.setItem("modalAbierto", false);
 
