@@ -2631,4 +2631,98 @@ th {
     margin-bottom: 30rem !important;
   }
 }
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.step-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #330662;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.step-button[aria-expanded="true"] {
+  width: 60px;
+  height: 60px;
+  background-color: #e99800;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.done {
+  background-color: #e99800;
+  color: #fff;
+}
+
+.step-item {
+  z-index: 10;
+  text-align: center;
+}
+
+#progress {
+  -webkit-appearance: none;
+  position: absolute;
+  width: 95%;
+  z-index: 5;
+  height: 10px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+
+/* to customize progress bar */
+#progress::-webkit-progress-value {
+  background-color: #e99800;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+#progress::-webkit-progress-bar {
+  background-color: rgba(41, 28, 100, 0.85);
+}
+
+.content-modal {
+  background-color: #1c0d54 !important;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0rem 5rem 1rem #330662;
+          box-shadow: 0 0rem 5rem 1rem #330662;
+  border-bottom: 2px solid #e99800;
+}
+
+.accordion-body {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.accordion-item {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+.text-warning {
+  color: #e99800 !important;
+}
+
+.btn-close {
+  width: 3em;
+  background: none !important;
+}
+
+.btn-primary:focus {
+  background-color: #e99800;
+}
 /*# sourceMappingURL=estilos.css.map */

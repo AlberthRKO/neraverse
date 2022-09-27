@@ -1,5 +1,7 @@
 $(document).ready(function () {
   $("#example").DataTable();
+  let modalsito = $("#staticBackdrop");
+  modalsito.addClass(modalsito.attr("data-animate-in"));
 });
 $(function () {
   "use strict";
@@ -22,6 +24,35 @@ $(function () {
         });
     }
   });
+
+  // localStorage.setItem("modalAbierto", false);
+
+  // $(window).on("load", function () {
+  //   setTimeout(function () {
+  //     $("#staticBackdrop").modal("show");
+  //   }, 2000);
+  //   // $("#staticBackdrop").modal("show");
+  // });
+
+  $(window).on("load", function () {
+    if (!localStorage.getItem("modalfinal")) {
+      $("#staticBackdrop").modal("show");
+      localStorage.setItem("modalfinal", true);
+    }
+    localStorage.setItem("modalfinal", false);
+  });
+
+  /* $(window).on("load", function () {
+    localStorage.setItem("modal6", true);
+    let def = !localStorage.getItem("modal6");
+    console.log(def);
+    if (def == false) {
+      $("#staticBackdrop").modal("show");
+      // localStorage.setItem("modal6", false);
+    }
+  }); */
+
+  // console.log(localStorage.getItem("modal5"));
 
   /* Seccion de particle _Js */
   particlesJS.load("particle-js", "particles.json", function () {
@@ -138,6 +169,24 @@ $(function () {
       scrub: 1,
     },
     y: -300,
+  });
+
+  const stepButtons = document.querySelectorAll(".step-button");
+  const progress = document.querySelector("#progress");
+
+  Array.from(stepButtons).forEach((button, index) => {
+    button.addEventListener("click", () => {
+      progress.setAttribute("value", (index * 100) / (stepButtons.length - 1)); //there are 3 buttons. 2 spaces.
+
+      stepButtons.forEach((item, secindex) => {
+        if (index > secindex) {
+          item.classList.add("done");
+        }
+        if (index < secindex) {
+          item.classList.remove("done");
+        }
+      });
+    });
   });
 
   /* ------------------------------------
