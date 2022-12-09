@@ -170,6 +170,12 @@ $(function () {
     },
     y: -300,
   });
+  gsap.to("#slideKarts", {
+    scrollTrigger: {
+      scrub: 1,
+    },
+    y: -300,
+  });
 
   const stepButtons = document.querySelectorAll(".step-button");
   const progress = document.querySelector("#progress");
@@ -312,6 +318,23 @@ $(function () {
       rotate: 20,
       stretch: 0,
       depth: 200,
+      modifier: 1,
+      slideShadows: true,
+    },
+    loop: true,
+    autoplay: {
+      delay: 2000,
+    },
+  });
+  var swiperBeneficios = new Swiper("#swiperKarts", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 30,
+      stretch: 0,
+      depth: 100,
       modifier: 1,
       slideShadows: true,
     },
