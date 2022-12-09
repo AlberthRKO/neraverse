@@ -2745,7 +2745,7 @@ th{
   }
   .tilt-box-wrap:hover{
     transition: all .3s linear;
-    transform: scale(.9);
+    transform: scale(1.1);
     filter: saturate(120%);
     mix-blend-mode: overlay;
     z-index: 10;

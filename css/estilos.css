@@ -3143,8 +3143,8 @@ th {
   .tilt-box-wrap:hover {
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
     -webkit-filter: saturate(120%);
             filter: saturate(120%);
     mix-blend-mode: overlay;
