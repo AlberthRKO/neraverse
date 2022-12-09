@@ -3132,4 +3132,23 @@ th {
     z-index: 10;
   }
 }
+
+@media (max-width: 420px) {
+  #slideKarts .slidersito .swiper-slide {
+    width: auto;
+    height: auto;
+    -webkit-transform: scale(0.8) !important;
+            transform: scale(0.8) !important;
+  }
+  .tilt-box-wrap:hover {
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-filter: saturate(120%);
+            filter: saturate(120%);
+    mix-blend-mode: overlay;
+    z-index: 10;
+  }
+}
 /*# sourceMappingURL=estilos.css.map */

@@ -2737,3 +2737,17 @@ th{
     z-index: 10;
   }
 }
+@media (max-width: 420px){
+  #slideKarts .slidersito .swiper-slide{
+    width: auto;
+    height: auto;
+    transform: scale(.8) !important;
+  }
+  .tilt-box-wrap:hover{
+    transition: all .3s linear;
+    transform: scale(.9);
+    filter: saturate(120%);
+    mix-blend-mode: overlay;
+    z-index: 10;
+  }
+}
