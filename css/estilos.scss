@@ -64,7 +64,10 @@ section{
   background: transparent;
   z-index: 2;
 }
-
+#headers{
+  position: absolute;
+  z-index: 50000;
+}
 
 //---------------------------------------
 // 3. ESTILOS GENERALES PARA LOS BOTONES
@@ -1551,15 +1554,15 @@ color: $principal !important;
   // object-fit: cover;
 }
 .segundaaa{
-  right: -5%;
+  right: -10%;
   height: 100%;
-  transform: scale(.8);
+  transform: scale(.75);
   transform-origin: bottom;
 }
 .primeraaa{
-  left: -5%;
+  left: -10%;
   height: 100%;
-  transform: scale(.8);
+  transform: scale(.75);
   transform-origin: bottom;
 }
 .swiper-container::before{
@@ -2065,9 +2068,7 @@ box-shadow: inset -1px 3px 8px 5px $colorCard, 2px 5px 16px 0px #0B325E, 5px 5px
   }
 }
 
-.nameLogo{
-  z-index: 50;
-}
+
 
 .section-nav{
   height: 500px;
@@ -2750,4 +2751,14 @@ th{
     mix-blend-mode: overlay;
     z-index: 10;
   }
+}
+
+
+.portadita .nameLogo{
+  position: absolute;
+  width: 100px;
+  height: auto;
+  left: 0;
+  bottom: 0;
+  // z-index: 50;
 }

@@ -42,26 +42,6 @@ $(function () {
     localStorage.setItem("modalfinal", false);
   });
 
-  /* $(window).on("load", function () {
-    localStorage.setItem("modal6", true);
-    let def = !localStorage.getItem("modal6");
-    console.log(def);
-    if (def == false) {
-      $("#staticBackdrop").modal("show");
-      // localStorage.setItem("modal6", false);
-    }
-  }); */
-
-  // console.log(localStorage.getItem("modal5"));
-
-  /* Seccion de particle _Js */
-  particlesJS.load("particle-js", "particles.json", function () {
-    // console.log("callback - particles.js config loaded");
-  });
-  particlesJS.load("portadaaa", "particles.json", function () {
-    // console.log("callback - particles.js config loaded");
-  });
-
   // seccion de animacion
 
   gsap.to("#content-box-video", {
@@ -72,12 +52,8 @@ $(function () {
     scale: 1.2,
   });
   // configuracion de Gsap
-  gsap.to("#videoNera", {
-    scrollTrigger: {
-      scrub: 1,
-    },
-    scale: 1.5,
-  });
+
+  // loguito
   gsap.to("#logo1", {
     scrollTrigger: {
       scrub: 1,
@@ -86,19 +62,19 @@ $(function () {
   });
   gsap.to("#logo2", {
     scrollTrigger: {
-      scrub: 1,
+      scrub: 2,
     },
     x: 500,
   });
   gsap.to("#logo3", {
     scrollTrigger: {
-      scrub: 1,
+      scrub: 3,
     },
     y: 500,
   });
   gsap.to("#logo4", {
     scrollTrigger: {
-      scrub: 1,
+      scrub: 4,
     },
     y: -500,
   });
@@ -106,8 +82,9 @@ $(function () {
     scrollTrigger: {
       scrub: 1,
     },
-    y: -500,
-    scale: 2.5,
+
+    y: 100,
+    scale: 0.8,
   });
   gsap.to("#primeraaa", {
     scrollTrigger: {
@@ -175,6 +152,26 @@ $(function () {
       scrub: 1,
     },
     y: -300,
+  });
+
+  /* $(window).on("load", function () {
+    localStorage.setItem("modal6", true);
+    let def = !localStorage.getItem("modal6");
+    console.log(def);
+    if (def == false) {
+      $("#staticBackdrop").modal("show");
+      // localStorage.setItem("modal6", false);
+    }
+  }); */
+
+  // console.log(localStorage.getItem("modal5"));
+
+  /* Seccion de particle _Js */
+  particlesJS.load("particle-js", "particles.json", function () {
+    // console.log("callback - particles.js config loaded");
+  });
+  particlesJS.load("portadaaa", "particles.json", function () {
+    // console.log("callback - particles.js config loaded");
   });
 
   const stepButtons = document.querySelectorAll(".step-button");
@@ -346,7 +343,7 @@ $(function () {
 
   var swiperBeneficios = new Swiper("#animacion", {
     speed: 1500,
-    grabCursor: false,
+    // grabCursor: false,
     loop: false,
 
     // Componente Navigation
@@ -361,13 +358,7 @@ $(function () {
       type: "bullets",
     },
 
-    autoplay: false,
-
-    //Componente keyboard
-    keyboard: {
-      enabled: true,
-      onlyInViewport: true,
-    },
+    autoplay: true,
   });
 
   /* ------------------------------------

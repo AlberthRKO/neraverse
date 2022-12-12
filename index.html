@@ -63,6 +63,9 @@
 
     <!-- Cargando "Estilos personalizados" -->
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="libs/gsap/gsap.min.js"></script>
+    <script src="libs/gsap/ScrollTrigger.min.js"></script>
+
 
 </head>
 
@@ -75,6 +78,7 @@
 
         <section id="animacion" class="swiper-container position-relative overflow-hidden" style="height: 100vh;">
             <div id="portadaaa"></div>
+
             <header id="presentacion" class="fixed-top">
                 <div id="topbar" class="d-none d-lg-flex align-items-center" style="background: transparent;">
                     <div class="container d-flex justify-content-between">
@@ -192,38 +196,101 @@
 
             <div id="animadisimo" class="swiper-wrapper position-relative portadita">
                 <div class="swiper-slide d-flex justify-content-center align-items-center"
-                    style="background: linear-gradient(rgba(9,0,42,.5), rgba(9,0,42,.7)),url('images/portadas/portada2.jpg') center center / cover">
+                    style="background: linear-gradient(rgba(9,0,42,.5), rgba(9,0,42,.7)),url('images/portadas/bg2.png') center center / cover">
 
                     <!-- <video id="videoNera" muted autoplay loop>
                         <source src="images/video.mp4" type="video/mp4">
                     </video> -->
                     <img id="primeraaa" class="primeraaa d-none d-xl-block" src="images/portadas/primero.png" alt="">
                     <img id="segundaaa" class="segundaaa d-none d-xl-block" src="images/portadas/segundo.png" alt="">
-                    <a href="https://play.neraverselegendary.com/" id="nameLogo"
-                        class="position-absolute h2 text-decoration-none bottom-0 nameLogo display-1 fw-bold text-uppercase text-primary text-center">
-                        Neraverse Legendary</a>
+                    <!-- <a href="https://play.neraverselegendary.com/" id="nameLogo"
+                        class="position-absolute text-decoration-none bottom-0 nameLogo display-1 fw-bold text-uppercase text-primary">
+                        <span class="d-none">asdasdsa</span><img src="images/logo/LOGO NERAVERSE PNG.png"
+                            class="img-fluid" width="350" alt="">
+                    </a> -->
+
+                    <img src="images/logo/LOGO NERAVERSE PNG.png" class="nameLogo d-none" width="250" id="nameLogo"
+                        alt="">
                     <!-- <p id="pLogo" class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
                         nesciunt modi
                         impedit cumque
                         omnis rerum saepe, ad sequi ratione dicta expedita!</p> -->
 
 
-                    <div class="capa"></div>
+                    <!-- <div class="capa"></div> -->
                     <div class="container contenido-animado">
                         <div class="row justify-content-center align-items-center">
                             <div class="col-9 col-lg-6 tituloContenido text-center">
                                 <!-- <img src="images/logo/iconoNera.png" class="img-fluid" width="150" alt=""> -->
-                                <img id="logo1" class="logonaso logonaso1"
+                                <img id="logo1" class="logonaso d-none logonaso1"
                                     src="images/LOGO FRAGMENTADO NERAVERSE/TOKEN POR PARTES_Mesa de trabajo 1.png"
                                     alt="">
-                                <img id="logo2" class="logonaso logonaso4"
+                                <img id="logo2" class="logonaso d-none logonaso4"
                                     src="images/LOGO FRAGMENTADO NERAVERSE/TOKEN POR PARTES-04.png" alt="">
-                                <img id="logo3" class="logonaso logonaso3"
+                                <img id="logo3" class="logonaso d-none logonaso3"
                                     src="images/LOGO FRAGMENTADO NERAVERSE/TOKEN POR PARTES-03.png" alt="">
-                                <img id="logo4" class="logonaso logonaso2"
+                                <img id="logo4" class="logonaso d-none logonaso2"
                                     src="images/LOGO FRAGMENTADO NERAVERSE/TOKEN POR PARTES-02.png" alt="">
 
+                                <div class="section-title">
+                                    <h2>Play free now</h2>
+                                    <p>Run, compete and win in the most addictive racing world.</p>
+                                    <!-- <button class="btn btn-secundario mt-2 mt-lg-0"><i class="fas fa-eye"></i> View
+                                        more</button> -->
+                                </div>
+
                                 <!-- <img src="images/login2.png" alt=""> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="swiper-slide d-flex justify-content-center align-items-center"
+                    style="background: linear-gradient(rgba(9,0,42,.5), rgba(9,0,42,.7)),url('images/portadas/bg2.png') center center / cover;">
+
+                    <!-- <video id="videoNera" muted autoplay loop>
+                        <source src="images/video.mp4" type="video/mp4">
+                    </video> -->
+
+
+
+                    <!-- <div class="capa"></div> -->
+                    <div class="container contenido-animado portHeader">
+                        <div class="row justify-content-center justify-content-lg-start align-items-center">
+                            <div class="col-9 col-lg-4 tituloContenido  text-center text-lg-start">
+                                <div class="section-title">
+                                    <h2>Play free now</h2>
+                                    <p>Run, compete and win in the most addictive racing world.</p>
+                                    <!-- <button class="btn btn-secundario mt-2 mt-lg-0"><i class="fas fa-eye"></i> View
+                                    more</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="swiper-slide d-flex justify-content-center align-items-center"
+                    style="background: linear-gradient(rgba(9,0,42,.5), rgba(9,0,42,.7)),url('images/portadas/bg3.png') center center / cover;">
+
+                    <!-- <video id="videoNera" muted autoplay loop>
+                        <source src="images/video.mp4" type="video/mp4">
+                    </video> -->
+
+
+
+                    <!-- <div class="capa"></div> -->
+                    <div class="container contenido-animado portHeader">
+                        <div class="row justify-content-center justify-content-lg-start align-items-center">
+                            <div class="col-9 col-lg-4 tituloContenido  text-center text-lg-start">
+                                <div class="section-title">
+                                    <h2>Play free now</h2>
+                                    <p>Run, compete and win in the most addictive racing world.</p>
+                                    <!-- <button class="btn btn-secundario mt-2 mt-lg-0"><i class="fas fa-eye"></i> View
+                                    more</button> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1786,6 +1853,7 @@
     </div>
 
 
+
     <!-- Carga de jQuery -->
     <script src="libs/jquery/jquery-3.4.1.min.js"></script>
 
@@ -1813,8 +1881,7 @@
 
     <!-- Carga de hc-sticky.js -->
     <script src="libs/hc-sticky/dist/hc-sticky.js"></script>
-    <script src="libs/gsap/gsap.min.js"></script>
-    <script src="libs/gsap/ScrollTrigger.min.js"></script>
+
 
     <script>
 
