@@ -1503,11 +1503,16 @@ color: $principal !important;
   position: relative;
   z-index: 2;
 }
+.portadita .contenido-animado .imagenLogotipo{
+  position: relative;
+  padding-top: 80%;
+}
 .portadita .contenido-animado img{
   position: absolute;
+
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%) scale(.5);
 }
 .logonaso1{
   width: 350px;
@@ -2762,3 +2767,4 @@ th{
   bottom: 0;
   // z-index: 50;
 }
+
